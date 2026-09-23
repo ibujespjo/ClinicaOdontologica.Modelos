@@ -34,7 +34,7 @@ public class Citas
     [Column("id_consultorio")]
     public int IdConsultorio { get; set; }
 
-    // Propiedades de navegación
+    
     [ForeignKey(nameof(IdPaciente))]
     public Pacientes? Paciente { get; set; }
 
