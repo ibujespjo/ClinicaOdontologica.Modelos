@@ -22,4 +22,8 @@ public class Tratamientos
     [Required(ErrorMessage = "La duración estimada es obligatoria")]
     [Column("duracion_estimada_minutos")]
     public int DuracionEstimadaMinutos { get; set; }
+
+    //Relaciones
+    List<DetallesCita>? DetallesCita { get; set; }= new List<DetallesCita>();
+
 }

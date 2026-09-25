@@ -27,4 +27,8 @@ public class Consultorios
     [StringLength(100)]
     public string? Equipamiento_Principal { get; set; }
 
+
+    //Relaciones
+    List<Citas>? Citas{ get; set; } = new List<Citas>();
+
 }

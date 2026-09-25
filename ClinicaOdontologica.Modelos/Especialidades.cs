@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ClinicaOdontologica.Modelos;
 
+[Table("especialidades")]
 public class Especialidades
 {
     [Key]
@@ -18,4 +19,7 @@ public class Especialidades
     [Column("descripcion")]
     [StringLength(200)]
     public string? Descripcion { get; set; }
+
+    //Relaciones
+    public List<Odontologos> Odontologos { get; set; } = new List<Odontologos>();
 }

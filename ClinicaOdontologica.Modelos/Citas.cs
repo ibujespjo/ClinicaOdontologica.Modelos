@@ -33,8 +33,7 @@ public class Citas
     [Required]
     [Column("id_consultorio")]
     public int IdConsultorio { get; set; }
-
-    
+ 
     [ForeignKey(nameof(IdPaciente))]
     public Pacientes? Paciente { get; set; }
 
@@ -43,4 +42,11 @@ public class Citas
 
     [ForeignKey(nameof(IdConsultorio))]
     public Consultorios? Consultorio { get; set; }
+
+
+    //Relaciones
+    public List<DetallesCita> DetallesCitas { get; set; } = new List<DetallesCita>();
+    public List<Recetas> Recetas { get; set; } = new List<Recetas>();
+    public Facturas? Factura { get; set; }   
+
 }
