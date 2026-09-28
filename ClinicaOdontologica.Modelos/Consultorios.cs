@@ -29,6 +29,6 @@ public class Consultorios
 
 
     //Relaciones
-    List<Citas>? Citas{ get; set; } = new List<Citas>();
+    public List<Citas>? Citas{ get; set; } = new List<Citas>();
 
 }

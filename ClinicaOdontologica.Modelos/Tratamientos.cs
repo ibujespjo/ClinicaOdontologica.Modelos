@@ -24,6 +24,6 @@ public class Tratamientos
     public int DuracionEstimadaMinutos { get; set; }
 
     //Relaciones
-    List<DetallesCita>? DetallesCita { get; set; }= new List<DetallesCita>();
+    public List<DetallesCita>? DetallesCita { get; set; }= new List<DetallesCita>();
 
 }
